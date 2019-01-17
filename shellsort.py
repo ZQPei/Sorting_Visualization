@@ -27,8 +27,8 @@ def ShellSort(ds):
 if __name__ == "__main__":
     ds=DataSeq(64)
     ds.Visualize()
-
+    ds.StartTimer()
     ShellSort(ds)
-
+    ds.StopTimer()
     ds.SetTimeInterval(0)
     ds.Visualize()

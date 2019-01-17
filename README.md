@@ -2,21 +2,19 @@
 
 ## Introduction
 
-This repository is a demo for visualizing Nine kinds of Sorting Algorithms.
+This repository is a demo for visualizing Nine kinds of Sorting Algorithms. It aims to make Sort Algorithms easier to understand for programmers. Also, you can see the difference of Time Complexity between different sorting algorithms.
 
-It aims to make Sort Algorithms easier to understand for programmers.
-
-Also, you can see the difference of Time complexity between different sorting algorithms.
-
-- Bubble Sort
-- Insertion Sort
-- Shell Sort
-- Selection Sort
-- Heap Sort
-- Merge Sort
-- Quick Sort
-- Bucket Sort
-- Cycle Sort
+| Sorting Algorithm | Time Complexity |
+| ----------------- | --------------- |
+| Bubble Sort       | O(N^2)          |
+| Insertion Sort    | O(N^2)          |
+| Shell Sort        | O(NlogN)        |
+| Selection Sort    | O(N^2)          |
+| Heap Sort         | O(NlogN)        |
+| Merge Sort        | O(NlogN)        |
+| Quick Sort        | O(NlogN)        |
+| Bucket Sort       | O(N)            |
+| Cycle Sort        | O(N^2)          |
 
 
 

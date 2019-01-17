@@ -57,8 +57,8 @@ def HeapSort(ds, time_interval=1):
 if __name__ == "__main__":
     ds=DataSeq(64)
     ds.Visualize()
-
+    ds.StartTimer()
     HeapSort(ds)
-
+    ds.StopTimer()
     ds.SetTimeInterval(0)
     ds.Visualize()

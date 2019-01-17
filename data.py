@@ -8,10 +8,12 @@ class DataSeq:
     RED = (0,0,255)
     BLACK = (0,0,0)
     YELLOW = (0,127,255)
-    def __init__(self, Length, time_interval=1, sort_title="Figure"):
+    def __init__(self, Length, time_interval=1, sort_title="Figure", repeatition=False):
         self.data = [x for x in range(Length)]
-        # self.Shuffle()
-        self.data = random.choices(self.data, k=Length)
+        if repeatition:
+            self.data = random.choices(self.data, k=Length)
+        else:
+            self.Shuffle()
         self.length = Length
 
         self.SetTimeInterval(time_interval)
