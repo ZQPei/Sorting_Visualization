@@ -48,6 +48,7 @@ This repository is a demo for visualizing Nine kinds of Sorting Algorithms. It a
      - BucketSort
      - CycleSort
    - `-i` `--interval`: Time Interval of next frame
+   - `-r` `--repetition`: Array's Elements is Repeated or Not
 
 ### May you have fun!
 
