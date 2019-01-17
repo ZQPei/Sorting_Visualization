@@ -16,6 +16,12 @@ This repository is a demo for visualizing Nine kinds of Sorting Algorithms. It a
 | Bucket Sort       | O(N)            |
 | Cycle Sort        | O(N^2)          |
 
+|                            |                            |                        |
+| -------------------------- | -------------------------- | ---------------------- |
+| ![](img/BubbleSort.png)    | ![](img/InsertionSort.png) | ![](img/ShellSort.png) |
+| ![](img/SelectionSort.png) | ![](img/HeapSort.png)      | ![](img/MergeSort.png) |
+| ![](img/QuickSort.png)     | ![](img/BucketSort.png)    | ![](img/CycleSort.png) |
+
 
 
 ## Dependencies
