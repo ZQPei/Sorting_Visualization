@@ -8,7 +8,9 @@ class DataSeq:
     RED = (0,0,255)
     BLACK = (0,0,0)
     YELLOW = (0,127,255)
-    def __init__(self, Length, time_interval=1, sort_title="Figure", repeatition=False):
+
+    MAX_IM_SIZE = 500
+    def __init__(self, Length, time_interval=1, sort_title="Figure", repeatition=False, record=False, fps=25):
         self.data = [x for x in range(Length)]
         if repeatition:
             self.data = random.choices(self.data, k=Length)
@@ -20,6 +22,11 @@ class DataSeq:
         self.SetSortType(sort_title)
         self.Getfigure()
         self.InitTime()
+
+        self.record = record
+        if record:
+            fourcc = cv2.VideoWriter_fourcc(*'XVID')
+            self.vdo_wtr = cv2.VideoWriter("%s.avi"%self.sort_title, fourcc, fps, (self.im_size, self.im_size), True)
 
         self.Visualize()
 
@@ -56,6 +63,8 @@ class DataSeq:
             figure[-1-val*_bar_width:, i*_bar_width:i*_bar_width+_bar_width] = self.GetColor(val, self.length)
         self._bar_width = _bar_width
         self.figure = figure
+        size = _bar_width*self.length
+        self.im_size = size if size < self.MAX_IM_SIZE else self.MAX_IM_SIZE
 
     @staticmethod
     def GetColor(val, TOTAL):
@@ -96,11 +105,15 @@ class DataSeq:
             self.Mark( img, mark2, self.YELLOW)
         if mark1:
             self.Mark( img, mark1, self.RED)
-        if img.shape[1] > 500:
-            img = cv2.resize(img, (500,500))
+
+        img = cv2.resize(img, (self.im_size, self.im_size))
         
         self.GetTime()
         cv2.putText(img, self.sort_title+" Time:%02.2fs"%self.time, (20,20), cv2.FONT_HERSHEY_PLAIN, 1, self.YELLOW, 1)
+
+        if self.record:
+            self.vdo_wtr.write(img)
+
         cv2.imshow(self.sort_title, img)
         cv2.waitKey(self.time_interval)
 

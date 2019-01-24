@@ -34,6 +34,10 @@ This repository is a demo for visualizing Nine kinds of Sorting Algorithms. It a
 
 0. Check all dependencies installed
 
+   This command can help you install all the dependent packages
+
+   `pip install -r requirements.txt`
+
 1. Clone this repository
 
    `git clone git@github.com:ZQPei/Sort_Visualization.git`

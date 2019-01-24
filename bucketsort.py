@@ -7,6 +7,7 @@ def BucketSort(ds):
         桶排序只适用于整数排序，且最大元素不能比数组元素大太多的情况
     """
     assert isinstance(ds, DataSeq), "Type Error"
+    assert isinstance(ds.data[0], int), "Type Error"
 
     Length = ds.length
     bucket = [0 for _ in range(Length)]

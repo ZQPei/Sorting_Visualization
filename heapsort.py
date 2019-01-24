@@ -9,7 +9,7 @@ def CheckMaxHeap(data, size, child):
         CheckMaxHeap(data, size, child*2+1)
 
 
-def HeapSort(ds, time_interval=1):
+def HeapSort(ds):
     assert isinstance(ds, DataSeq), "Type Error"
 
     Length = ds.length

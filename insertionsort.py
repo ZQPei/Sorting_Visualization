@@ -1,6 +1,6 @@
 from data import DataSeq
 
-def InsertionSort(ds, time_interval=1):
+def InsertionSort(ds):
     assert isinstance(ds, DataSeq), "Type Error"
 
     Length = ds.length

@@ -5,6 +5,7 @@ def CycleSort(ds):
         环排序只适用于整数排序，且数正好范围在[0,N-1]内，且只有少量重复元素，不稳定
     """
     assert isinstance(ds, DataSeq), "Type Error"
+    assert isinstance(ds.data[0], int), "Type Error"
 
     Length = ds.length
     # 重复元素的列表

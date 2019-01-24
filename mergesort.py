@@ -2,7 +2,7 @@ import copy
 
 from data import DataSeq
 
-def Merge(ds, L, R, RightEnd, time_interval):
+def Merge(ds, L, R, RightEnd):
     tmpData = copy.copy(ds.data)
     LeftEnd = R-1
     i=L
@@ -26,21 +26,21 @@ def Merge(ds, L, R, RightEnd, time_interval):
         k+=1
         j+=1
 
-def Sort(ds, L, RightEnd, time_interval):
+def Sort(ds, L, RightEnd):
     # import ipdb; ipdb.set_trace()
     if RightEnd>L:
         mid = (L+RightEnd)//2
-        Sort(ds,L,mid, time_interval)
-        Sort(ds,mid+1,RightEnd, time_interval)
-        Merge(ds,L,mid+1,RightEnd, time_interval)
+        Sort(ds,L,mid)
+        Sort(ds,mid+1,RightEnd)
+        Merge(ds,L,mid+1,RightEnd)
 
 
 
-def MergeSort(ds, time_interval=1):
+def MergeSort(ds):
     assert isinstance(ds, DataSeq), "Type Error"
 
     Length = ds.length
-    Sort(ds, 0,Length-1, time_interval)
+    Sort(ds, 0,Length-1)
 
 
 
