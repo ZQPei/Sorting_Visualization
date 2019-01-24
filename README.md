@@ -24,6 +24,14 @@ This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aim
 | Radix Sort        | O(N)                   | O(N)                | YES       |
 | Monkey Sort       | O(N!)                  | O(N!)               | YES       |
 
+## Demos
+
+|                            |                            |                         |
+| -------------------------- | -------------------------- | ----------------------- |
+| ![](img/BubbleSort.png)    | ![](img/InsertionSort.png) | ![](img/ShellSort.png)  |
+| ![](img/SelectionSort.png) | ![](img/HeapSort.png)      | ![](img/MergeSort.png)  |
+| ![](img/QuickSort.png)     | ![](img/BucketSort.png)    | ![](img/CycleSort.png)  |
+| ![](img/CombSort.png)      | ![](img/RadixSort.png)     | ![](img/MonkeySort.png) |
 
 ## Dependencies
 
@@ -65,14 +73,6 @@ This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aim
    - `-r` `--repetition`: Array's Elements is Repeated or Not
    - `-n` `--no-record`: Don't record to *.avi video!
 
-## Demos
-
-|                            |                            |                         |
-| -------------------------- | -------------------------- | ----------------------- |
-| ![](img/BubbleSort.png)    | ![](img/InsertionSort.png) | ![](img/ShellSort.png)  |
-| ![](img/SelectionSort.png) | ![](img/HeapSort.png)      | ![](img/MergeSort.png)  |
-| ![](img/QuickSort.png)     | ![](img/BucketSort.png)    | ![](img/CycleSort.png)  |
-| ![](img/CombSort.png)      | ![](img/RadixSort.png)     | ![](img/MonkeySort.png) |
 
 ### May you have fun!
 
