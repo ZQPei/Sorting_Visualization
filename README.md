@@ -6,7 +6,7 @@
 
 - Add three more sorting algorithms: `CombSort`, `RadixSort`,  `MonkeySort`
 - Now you can record the whole sorting procedure to *avi videos.
-- Add `-r` in command line can get repeated sampled data.
+- Adding `-r` in command line can get you repeated sampled data.
 
 ## Introduction
 
