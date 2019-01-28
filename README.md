@@ -1,4 +1,4 @@
-![](img/Sort.jpg)
+![](img/sort.jpg)
 
 # Sorting Visualization
 
