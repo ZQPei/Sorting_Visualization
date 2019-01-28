@@ -6,11 +6,12 @@
 
 - Add three more sorting algorithms: `CombSort`, `RadixSort`,  `MonkeySort`
 - Now you can record the whole sorting procedure to *avi videos.
-- Adding `-r` in command line can get you repeated sampled data.
+- Adding `-r` in command line can get you Re-sampled data.
+- Adding `-s` in command line can get you Sparse data.
 
 ## Introduction
 
-This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aims to make Sorting Algorithms easier to understand for programmers. Also, you can see the difference of Time Complexity between different sorting algorithms.
+This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims to make Sorting Algorithms easier for programmers to understand. Also, you can see the difference of Time Complexity between different sorting algorithms.
 
 | Sorting Algorithm | AverageTime Complexity | Bad Time Complexity | Stability |
 | ----------------- | ---------------------- | ------------------- | --------- |
