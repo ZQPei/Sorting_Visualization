@@ -1,13 +1,16 @@
+![](img/Sort.jpg)
+
 # Sorting Visualization
 
 ## Latest Update
 
-- Add three more sort algorithms: `CombSort`, `RadixSort`,  `MonkeySort`
+- Add three more sorting algorithms: `CombSort`, `RadixSort`,  `MonkeySort`
 - Now you can record the whole sorting procedure to *avi videos.
+- Add `-r` in command line can get repeated sampled data.
 
 ## Introduction
 
-This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aims to make Sort Algorithms easier to understand for programmers. Also, you can see the difference of Time Complexity between different sorting algorithms.
+This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aims to make Sorting Algorithms easier to understand for programmers. Also, you can see the difference of Time Complexity between different sorting algorithms.
 
 | Sorting Algorithm | AverageTime Complexity | Bad Time Complexity | Stability |
 | ----------------- | ---------------------- | ------------------- | --------- |
