@@ -31,10 +31,10 @@ This repository is a demo for visualizing 12 kinds of Sorting Algorithms. It aim
 
 |                            |                            |                         |
 | -------------------------- | -------------------------- | ----------------------- |
-| ![](img/BubbleSort.png)    | ![](img/InsertionSort.png) | ![](img/ShellSort.png)  |
-| ![](img/SelectionSort.png) | ![](img/HeapSort.png)      | ![](img/MergeSort.png)  |
-| ![](img/QuickSort.png)     | ![](img/BucketSort.png)    | ![](img/CycleSort.png)  |
-| ![](img/CombSort.png)      | ![](img/RadixSort.png)     | ![](img/MonkeySort.png) |
+| ![](img/BubbleSort.gif)    | ![](img/InsertionSort.gif) | ![](img/ShellSort.gif)  |
+| ![](img/SelectionSort.gif) | ![](img/HeapSort.gif)      | ![](img/MergeSort.gif)  |
+| ![](img/QuickSort.gif)     | ![](img/BucketSort.gif)    | ![](img/CycleSort.gif)  |
+| ![](img/CombSort.gif)      | ![](img/RadixSort.gif)     | ![](img/MonkeySort.gif) |
 
 ## Dependencies
 
