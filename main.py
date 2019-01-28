@@ -21,7 +21,8 @@ parser.add_argument('-t','--sort-type',type=str,default='BubbleSort',
                                             "CycleSort","HeapSort","InsertionSort",
                                             "MergeSort","MonkeySort","QuickSort",
                                             "RadixSort","SelectionSort","ShellSort",])
-parser.add_argument('-r','--repetition',action='store_true')
+parser.add_argument('-r','--resample', action='store_true')
+parser.add_argument('-s','--sparse', action='store_true')
 parser.add_argument('-n','--no-record', action='store_true')
 args=parser.parse_args()
 
@@ -32,7 +33,8 @@ if __name__ == "__main__":
     Length=    args.length if args.length<MAXLENGTH else MAXLENGTH
     Interval=  args.interval
     SortType=  args.sort_type
-    Repetition=args.repetition
+    Resampling=args.resample
+    Sparse=    args.sparse
     NoRecord=  args.no_record
     try:
         SortMethod=eval(SortType)
@@ -40,7 +42,7 @@ if __name__ == "__main__":
         print("Sort Type Not Found! Please Check if %s Exists or Not!"%SortType)
         exit()
 
-    ds=DataSeq(Length, time_interval=Interval, sort_title=SortType, repeatition=Repetition, record=not NoRecord)
+    ds=DataSeq(Length, time_interval=Interval, sort_title=SortType, is_resampling=Resampling, is_sparse=Sparse, record=not NoRecord)
     ds.Visualize()
     ds.StartTimer()
     SortMethod(ds)

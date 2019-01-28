@@ -10,12 +10,15 @@ class DataSeq:
     YELLOW = (0,127,255)
 
     MAX_IM_SIZE = 500
-    def __init__(self, Length, time_interval=1, sort_title="Figure", repeatition=False, record=False, fps=25):
+    def __init__(self, Length, time_interval=1, sort_title="Figure", is_resampling=False, is_sparse=False, record=False, fps=25):
         self.data = [x for x in range(Length)]
-        if repeatition:
+        if is_resampling:
             self.data = random.choices(self.data, k=Length)
         else:
             self.Shuffle()
+        if is_sparse:
+            self.data = [x if random.random() < 0.3 else 0 for x in self.data]
+
         self.length = Length
 
         self.SetTimeInterval(time_interval)
@@ -118,7 +121,7 @@ class DataSeq:
         cv2.waitKey(self.time_interval)
 
 if __name__ == "__main__":
-    ds = DataSeq(64)
+    ds = DataSeq(64, is_sparse=True)
     ds.Visualize()
 
     for i in range(64):
