@@ -47,9 +47,9 @@ This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims
 
 0. Check all dependencies installed
 
-     This command can help you install all the dependent packages
+      This command can help you install all the dependent packages
 
-     `pip install -r requirements.txt`
+      `pip install -r requirements.txt`
 
 1. Clone this repository
 
@@ -74,7 +74,8 @@ This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims
      - RadixSort(LSD)
      - MonkeySort
    - `-i` `--interval`: Time Interval of next frame
-   - `-r` `--repetition`: Array's Elements is Repeated or Not
+   - `-r` `--resample`: Get Resampled Array
+   - `-s` `--sparse`: Sparse Array
    - `-n` `--no-record`: Don't record to *.avi video!
 
 
