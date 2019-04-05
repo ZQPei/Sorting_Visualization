@@ -20,7 +20,8 @@ def MonkeySort(ds):
 
         random.shuffle(ds.data)
         ds.Getfigure()
-        ds.Visualize()
+        idx = random.randint(0, ds.length)
+        ds.SetVal(idx, ds.data[idx])
         time.sleep(0.1)
 
 if __name__ == "__main__":

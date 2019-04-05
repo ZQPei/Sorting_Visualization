@@ -2,6 +2,16 @@
 
 # Sorting Visualization
 
+![](<https://img.shields.io/badge/python3-passing-brightgreen.svg>)
+![](<https://img.shields.io/badge/Video%20record-support-brightgreen.svg>)
+![](<https://img.shields.io/badge/Sound-support-brightgreen.svg>)
+![](<https://img.shields.io/badge/Sparse%20data-support-brightgreen.svg>)
+![](<https://img.shields.io/badge/Resampling%20data-support-brightgreen.svg>)
+
+## Latest Update2 (05/04/2019)
+
+- Now we can get sound simultaneously, and this is funny!!! We should all have a try.
+
 ## Latest Update
 
 - Add three more sorting algorithms: `CombSort`, `RadixSort`,  `MonkeySort`
@@ -77,6 +87,8 @@ This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims
    - `-r` `--resample`: Get Resampled Array
    - `-s` `--sparse`: Sparse Array
    - `-n` `--no-record`: Don't record to *.avi video!
+   - --silent: No voice output
+   - --sound-interval: Time of sound
 
 
 ### May you have fun!
