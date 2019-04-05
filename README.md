@@ -88,8 +88,8 @@ This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims
    - `-r` `--resample`: Get Resampled Array
    - `-s` `--sparse`: Sparse Array
    - `-n` `--no-record`: Don't record to *.avi video!
-   - --silent: No voice output
-   - --sound-interval: Time of sound
+   - `--silent`: No voice output
+   - `--sound-interval`: Time of sound
 
 
 ### May you have fun!
