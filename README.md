@@ -52,6 +52,7 @@ This repository is a demo of visualizing 12 types of Sorting Algorithms. It aims
 - python3.x
 - cv2
 - numpy
+- pygame
 
 ## Quick Start
 
