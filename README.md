@@ -10,7 +10,7 @@
 
 ## Latest Update2 (05/04/2019)
 
-- Now we can get sound simultaneously, and this is funny!!! We should all have a try.
+- **Great News:** Now we can get the Voice of Sorting Algorithm simultaneously, and this is so funny that we should all have a try!!!
 
 ## Latest Update
 
