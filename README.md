@@ -1,6 +1,6 @@
 ![](img/sort.jpg)
 
-# Sorting Visualization
+# Sorting Visualization and Audibilization
 
 ![](<https://img.shields.io/badge/python3-passing-brightgreen.svg>)
 ![](<https://img.shields.io/badge/Video%20record-support-brightgreen.svg>)

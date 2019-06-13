@@ -36,13 +36,13 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     MAXLENGTH=1000
-    Length=    args.length if args.length<MAXLENGTH else MAXLENGTH
-    Interval=  args.interval
-    SortType=  args.sort_type
-    Resampling=args.resample
-    Sparse=    args.sparse
-    NoRecord=  args.no_record
-    NoSound =  args.silent
+    Length     = args.length if args.length<MAXLENGTH else MAXLENGTH
+    Interval   = args.interval
+    SortType   = args.sort_type
+    Resampling = args.resample
+    Sparse     = args.sparse
+    NoRecord   = args.no_record
+    NoSound    = args.silent
     sound_interval = args.sound_interval
     try:
         SortMethod=eval(SortType)
