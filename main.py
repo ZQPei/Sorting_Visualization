@@ -1,16 +1,16 @@
-from data import DataSeq
-from bubblesort import BubbleSort
-from bucketsort import BucketSort
-from combsort import CombSort
-from cyclesort import CycleSort
-from heapsort import HeapSort
-from insertionsort import InsertionSort
-from mergesort import MergeSort
-from monkeysort import MonkeySort
-from quicksort import QuickSort
-from radixsort import RadixSort
-from selectionsort import SelectionSort
-from shellsort import ShellSort
+from src.data import DataSeq
+from src.bubblesort import BubbleSort
+from src.bucketsort import BucketSort
+from src.combsort import CombSort
+from src.cyclesort import CycleSort
+from src.heapsort import HeapSort
+from src.insertionsort import InsertionSort
+from src.mergesort import MergeSort
+from src.monkeysort import MonkeySort
+from src.quicksort import QuickSort
+from src.radixsort import RadixSort
+from src.selectionsort import SelectionSort
+from src.shellsort import ShellSort
 
 import argparse
 
