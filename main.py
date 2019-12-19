@@ -47,10 +47,10 @@ if __name__ == "__main__":
     try:
         SortMethod=eval(SortType)
     except:
-        print("Sort Type Not Found! Please Check if %s Exists or Not!"%SortType)
+        raise RuntimeError("Sort Type Not Found! Please Check if %s Exists or Not!"%SortType)
         exit()
     if not NoSound and sound_interval*10<Interval:
-        print("UserWarning: sound interval too small")
+        raise UserWarning("UserWarning: sound interval too small")
 
     ds=DataSeq(Length, time_interval=Interval, 
                         sort_title=SortType, 
